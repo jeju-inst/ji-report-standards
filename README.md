@@ -8,6 +8,7 @@ JRI 정책연구 보고서 작성 표준 (톤·서식·인용)
 
 * 최신 톤 가이드: <https://raw.githubusercontent.com/z0nam/ji-report-standards/main/tone/latest.md>
 * 최신 서식 안내: <https://raw.githubusercontent.com/z0nam/ji-report-standards/main/format/latest.md>
+* G-리포트 서식 안내: <https://raw.githubusercontent.com/jeju-inst/ji-report-standards/main/format/g-report/latest.md>
 * 최신 인용 표기법: <https://raw.githubusercontent.com/z0nam/ji-report-standards/main/citation/latest.md>
 
 ## 구조
@@ -18,6 +19,7 @@ ji-report-standards/
 │   ├── latest.md            → 현재 권장 버전
 │   └── YYYY-MM-DD-N.md      → 시점별 동결 버전 (N: 같은 날 연번)
 ├── format/      장·절 구조, 표·그림 캡션, 서식 docx/hwpx 안내
+│   └── g-report/  G-리포트(정책대응 참고자료) 서식 안내
 ├── citation/    인용 표기법 (제주연구원 인용표기 지침 기반)
 └── CHANGELOG.md
 ```
