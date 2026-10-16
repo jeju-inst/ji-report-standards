@@ -1,20 +1,28 @@
-# ji-report-standards
+# ji-writing-standards
 
-JRI 정책연구 보고서 작성 표준 (톤·서식·인용)
+제주연구원 보고서 작성 표준 — 문체·서식·인용
 
 본 저장소는 여러 보고서 프로젝트에서 공통으로 참조하는 작성 표준을 단일 출처(single source of truth)로 관리함. 인간 작성자와 AI 도구(Claude, ChatGPT, Cursor 등) 모두 동일한 URL을 통해 접근하여 일관된 표준을 적용할 수 있도록 함.
 
+## 적용 범위와 저장소 이름
+
+* 본 저장소는 제주연구원 보고서 전반의 공통 작성 표준을 관리함. 특정 발간물인 **JI-Report 전용 저장소가 아님**
+* 문체·인용 등 공통 원칙과 문서 유형별 서식을 구분하여 적용함
+* 2026-10-16 저장소 이름을 `ji-report-standards`에서 `ji-writing-standards`로 변경함. 표준 본문·버전·파일 경로는 이번 이름 변경으로 바꾸지 않음
+* 기존 GitHub 주소에만 의존하지 말고 신규 참조에는 `jeju-inst/ji-writing-standards`를 사용함. 옛 저장소 이름은 리디렉션 유지를 위해 재사용하지 않음
+* 로컬 경로를 변경할 때는 기존 작업의 참조를 먼저 확인하고 필요시 옛 경로에 호환용 심링크를 유지함
+
 ## 빠른 참조 (Raw URL)
 
-* 최신 톤 가이드: <https://raw.githubusercontent.com/z0nam/ji-report-standards/main/tone/latest.md>
-* 최신 서식 안내: <https://raw.githubusercontent.com/z0nam/ji-report-standards/main/format/latest.md>
-* G-리포트 서식 안내: <https://raw.githubusercontent.com/jeju-inst/ji-report-standards/main/format/g-report/latest.md>
-* 최신 인용 표기법: <https://raw.githubusercontent.com/z0nam/ji-report-standards/main/citation/latest.md>
+* 최신 톤 가이드: <https://raw.githubusercontent.com/jeju-inst/ji-writing-standards/main/tone/latest.md>
+* 최신 서식 안내: <https://raw.githubusercontent.com/jeju-inst/ji-writing-standards/main/format/latest.md>
+* G-리포트 서식 안내: <https://raw.githubusercontent.com/jeju-inst/ji-writing-standards/main/format/g-report/latest.md>
+* 최신 인용 표기법: <https://raw.githubusercontent.com/jeju-inst/ji-writing-standards/main/citation/latest.md>
 
 ## 구조
 
 ```
-ji-report-standards/
+ji-writing-standards/
 ├── tone/        보고서 본문 톤·bullet 규칙
 │   ├── latest.md            → 현재 권장 버전
 │   └── YYYY-MM-DD-N.md      → 시점별 동결 버전 (N: 같은 날 연번)
@@ -31,7 +39,7 @@ ji-report-standards/
   * 첫 버전도 `-1`을 명시하여 일관성 유지
 * `latest.md`는 항상 최신 버전을 가리킴
 * Git tag로 안정 URL 확보 가능
-  * 예: `https://raw.githubusercontent.com/z0nam/ji-report-standards/v2026-05-11-2/tone/latest.md`
+  * 예: `https://raw.githubusercontent.com/jeju-inst/ji-writing-standards/v2026-05-11-2/tone/latest.md`
 
 ## 사용 방법
 
@@ -45,7 +53,7 @@ ji-report-standards/
 
 * WebFetch / fetch 도구로 raw URL을 호출하여 가이드 본문을 수신
 * 프로젝트별 `CLAUDE.md`, `AGENTS.md`, `.cursorrules` 등에 본 저장소 URL을 참조로 명시
-  - 예: "톤·서식은 <https://raw.githubusercontent.com/z0nam/ji-report-standards/main/tone/latest.md> 를 따른다"
+  - 예: "톤·서식은 <https://raw.githubusercontent.com/jeju-inst/ji-writing-standards/main/tone/latest.md> 를 따른다"
 
 ### 버전 고정
 
