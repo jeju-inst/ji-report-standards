@@ -5,7 +5,7 @@
 `git push` 가 아래처럼 거부되는 것은 **오류가 아니라 설계된 동작**이다.
 
 ```
-ERROR: Permission to jeju-inst/ji-report-standards.git denied to <user>.
+ERROR: Permission to jeju-inst/ji-writing-standards.git denied to <user>.
 remote: error: GH006: Protected branch update failed for refs/heads/main.
 ```
 
@@ -14,17 +14,17 @@ remote: error: GH006: Protected branch update failed for refs/heads/main.
 **① 이슈로 알린다** — 가장 간단하고, 대부분은 이걸로 충분하다.
 
 ```sh
-gh issue create --repo jeju-inst/ji-report-standards --title "제목" --body "내용"
+gh issue create --repo jeju-inst/ji-writing-standards --title "제목" --body "내용"
 ```
 
 **② fork 후 PR** — 직접 고칠 때.
 
 ```sh
-gh repo fork jeju-inst/ji-report-standards --remote=true --clone=false
+gh repo fork jeju-inst/ji-writing-standards --remote=true --clone=false
 git switch -c fix/무엇을-고치는지
 git commit -am "무엇을 왜 고쳤는지"
 git push fork HEAD
-gh pr create --repo jeju-inst/ji-report-standards
+gh pr create --repo jeju-inst/ji-writing-standards
 ```
 
 ### AI 에이전트에게
