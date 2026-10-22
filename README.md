@@ -33,6 +33,17 @@ ji-report-standards/
 * Git tag로 안정 URL 확보 가능
   * 예: `https://raw.githubusercontent.com/z0nam/ji-report-standards/v2026-05-11-2/tone/latest.md`
 
+## AI 플러그인으로 쓰기 (제주연구원 JAIX)
+
+이 저장소는 Claude 플러그인 `ji-report-writing` 이기도 하다(`.claude-plugin/`, `skills/ji-report-writing/`).
+스킬이 이 저장소의 `tone/`·`format/`·`citation/` 원문을 직접 읽으므로 표준을 고치면 스킬도 같이 바뀐다.
+연구원 PC에는 JAIX 배포 허브([jeju-inst/jaix-kit](https://github.com/jeju-inst/jaix-kit))로 검증된 커밋이 깔린다.
+
+```
+/plugin marketplace add jeju-inst/jaix-kit
+/plugin install ji-report-writing@jaix
+```
+
 ## 사용 방법
 
 ### 인간 작성자
